@@ -1,0 +1,1180 @@
+
+@mixin transform($transform) {
+  -webkit-transform: $transform;
+     -moz-transform: $transform;
+      -ms-transform: $transform;
+       -o-transform: $transform;
+          transform: $transform;
+}
+
+@mixin box-shadow($shadows...) {
+      -webkit-box-shadow: $shadows;
+         -moz-box-shadow: $shadows;
+          -ms-box-shadow: $shadows;
+           -o-box-shadow: $shadows;
+              box-shadow: $shadows;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin transition($styles...) {
+  -webkit-transition: $styles;
+          transition: $styles;
+}
+
+@mixin border-image($images...) {
+  -webkit-border-image: $images;
+       -o-border-image: $images;
+          border-image: $images;
+}
+
+$arial-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$roboto-cd-font: 'Roboto Condensed', sans-serif;
+
+html, body {
+  width: 100vw;
+  height: 1550px;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+img, embed, object, video {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+//-------------------------
+
+header{
+  width: 100vw;
+  height: 160px;
+  overflow: auto;
+}
+
+.earn-degree-cntnr {
+  width: 73%;
+  max-width: 1022px;
+  min-width: 850px;
+  height: 48px;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 31px;
+}
+
+.logo-cntnr {
+  width: 472px;
+  height: 48px;
+  font-size: 12px;
+  overflow: auto;
+  display: inline-block;
+  margin-left: 32px
+}
+
+header h1 {
+  float: left;
+  
+}
+
+header h1 span {
+  color: #58585a;
+}
+
+header p {
+  width: 268px;
+  height: 34px;
+  color: rgb(88, 88, 90);
+  font-family: $roboto-cd-font;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+  line-height: 19px;
+  text-align: center;
+  display: inline-block;
+  float: right;
+  margin-top: 3px;
+  margin-right: 55px;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  width: 100vw;
+  height: 45px;
+  color: #ffffff;
+  background: rgb(13, 74, 96);
+  background: linear-gradient(to top, rgb(13, 74, 96), rgb(18, 98, 127));
+  clear: both;
+}
+
+nav ul {
+  width: 985px;
+  height: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav li {
+  height: 100%;
+  font-family: $roboto-cd-font;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  line-height: 45px;
+  list-style: none;
+  float: left;
+  border: 2px solid;
+  border-width: 0 0 0 2px;
+  @include border-image(url(../img/border.jpg) 0 0 0 2 round);
+  position: relative;
+  box-sizing: border-box;
+}
+
+nav li a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+.li-1 {
+  width: 238px;
+  padding-left: 45px;
+}
+
+.li-2 {
+  width: 200px;
+  padding-left: 45px;
+  letter-spacing: -0.6px;
+}
+
+.li-3 {
+  width: 208px;
+  padding-left: 44px;
+  letter-spacing: -0.6px;
+}
+
+.li-4 {
+  width: 172px;
+  padding-left: 45px;
+  letter-spacing: -0.6px;
+}
+
+.li-5 {
+  width: 125px;
+  padding-left: 44px;
+  border: 2px solid;
+  border-width: 0 2px 0 2px;
+  @include border-image(url(../img/border.jpg) 0 2 0 2 round);
+}
+
+.a-1 {
+  padding-left: 45px;
+}
+
+.a-2 {
+  padding-left: 45px;
+}
+
+.a-3 {
+  padding-left: 44px;
+}
+
+.a-4 {
+  padding-left: 45px;
+}
+
+.a-5 {
+  padding-left: 44px;
+}
+
+.active-arrow {
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid rgb(69, 163, 218);
+  position: relative;
+  top: 14px;
+  left: 11px;
+}
+
+.top-banner {
+  height: 93px;
+  width: 100vw;
+  background: rgb(69, 163, 218);
+  color: #ffffff;
+  overflow: auto;
+}
+
+.top-banner h1 {
+  width: 772px;
+  height: 44px;
+  font-family: $roboto-cd-font;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1.5px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 21px;
+  left: 3px;
+}
+
+.cta-cntnr {
+  width: 100vw;;
+  min-width: 1340px;
+  height: 428px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.jumbotron-img {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/background-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.form-cntnr {
+  width: 100vw;
+  height: 428px;
+  max-width: 1400px;
+  min-width: 1340px;
+  margin: 0 auto;
+  position: relative;
+}
+
+form {
+  width: 385px;
+  height: 290px;
+  border: 10px solid rgb(16, 89, 116);
+  float: right;
+  margin-top: 59px;
+  margin-right: 249px;
+  position: relative;
+}
+
+form h3 {
+  width:332px;
+  height: 28px;
+  color: rgb(15, 81, 105);
+  font-family: $roboto-cd-font;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1.1px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 22px;
+  position: relative;
+  right: 1px;
+}
+
+form select {
+  width: 324px;
+  height: 51px;
+  font-family: $arial-font;
+  font-size: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+  -webkit-border-radius: 0;
+          border-radius: 0;
+  border: 8px solid rgb(216, 236, 247);
+  background: transparent url("../img/down-arrow.jpg") no-repeat right center;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+select:nth-child(2) {
+  margin-bottom: 7px;
+}
+
+form div {
+  width: 325px;
+  height: 51px; 
+  background: rgb(191, 30, 30);
+  background: linear-gradient(to bottom, rgb(191, 30, 30), rgb(166, 26, 26));
+  color: #ffffff;
+  font-family: $roboto-cd-font;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.3px;
+  text-align: center;
+  line-height: 51px;
+  margin: 0 auto;
+  margin-top: 13px;
+  cursor: pointer;
+}
+
+form p {
+  width: 60px;
+  height: 8px;
+  font-family: $arial-font;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 16px;
+  font-size: 10px;
+  position: relative;
+  left: 1px;
+}
+
+.get-started-cntnr {
+  width: 960px;
+  height: 474px;
+  margin: 0 auto;
+  margin-bottom: 9px;
+}
+
+.get-started {
+  width: 500px;
+  height: 48px;
+  color: rgb(2, 43, 67);
+  font-family: $roboto-cd-font;
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  text-align: center;
+  margin-top: 43px;
+  margin-bottom: 54px;
+  margin-left: 230px;
+  text-align: center;
+}
+
+.steps-cntnr {
+  width: 960px;
+  height: 161px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.steps {
+  width: 294px;
+  height: 141px;
+  display: inline-block;
+  float: left;
+  border: 10px solid rgb(216, 236, 247);
+}
+
+.steps-right {
+  float: right
+}
+
+.steps-marg-lft {
+  margin-left: 10px;
+}
+
+.steps div {
+  width: 40px;
+  height: 40px;
+  color: rgb(190, 30, 30);
+  font-family: $roboto-cd-font;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  border: 4px solid rgb(69, 163, 218);
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+.numbers {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.steps p {
+  height: 42px;
+  font-family: $arial-font;
+  font-size: 18px;
+  text-align: center;
+  line-height: 22px;
+  margin: 0 auto;
+  margin-top: 13px;
+}
+
+.steps-first {
+  width: 113px;
+}
+
+.steps-mid {
+  width: 200px;
+}
+
+.steps-last {
+  width: 216px;
+}
+
+.up-arrow {
+  position: relative;
+  bottom: 316px;
+  left: 198px;
+}
+
+.no-login {
+  width: 590px;
+  height: 25px;
+  font-family: $roboto-cd-font;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.9px;
+  line-height: 25px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 44px;
+  position: relative;
+  right: 1px;
+}
+
+.cta-btn {
+  width: 370px;
+  height: 56px;
+  font-family: $roboto-cd-font;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -1.1px;
+  text-align: center;
+  line-height: 55px;
+  background: rgb(191, 30, 30);
+  background: linear-gradient(to bottom, rgb(191, 30, 30), rgb(166, 26, 26));
+  color: #ffffff;
+  position: relative;
+  margin: 0 auto;
+  padding-right: 2px;
+  margin-top: 46px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.schools-cntnr {
+  width: 100vw;
+  height: 164px;
+  background: rgb(216, 236, 247);
+  overflow: auto;
+}
+
+.schools-cntnr h4 {
+  width: 312px;
+  height: 22px;
+  color: rgb(2, 43, 67);
+  font-family: $roboto-cd-font;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.1px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.schools-cntnr ul {
+  width: 876px;
+  height: 48px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.schools-cntnr li {
+  width: 130px;
+  height: 48px;
+  list-style: none;
+  float: left;
+  margin-right: 46px;
+  position: relative;
+}
+
+.schools-cntnr li:nth-child(1) {
+  top: 2px;
+  right: 2px;
+}
+
+.schools-cntnr li:nth-child(2) {
+  margin-right: 39px;
+  top: 4px;
+}
+
+.schools-cntnr li:nth-child(3) {
+  margin-right: 67px;
+  top: 2px;
+}
+
+.schools-cntnr li:nth-child(4) {
+  margin-right: 73px;
+}
+
+.schools-cntnr li:last-child {
+  margin-right: 0;
+  top: 2px;
+}
+
+.logo-2 {
+  width: 244px;
+  height: 22px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 36px;
+  margin-bottom: 14px;
+}
+
+footer {
+  width: 100vw;
+}
+
+footer p {
+  width: 320px;
+  height: 10px;
+  font-family: $arial-font;
+  font-size: 11px;
+  line-height: 10px;
+  margin: 0 auto;
+  margin-bottom: 6px;
+}
+
+.privacy {
+  width: 204px;
+  height: 11px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto; 
+  margin-bottom: 36px;
+}
+
+.privacy li {
+  height: 11px;
+  color: rgb(16, 89, 116);
+  font-family: $arial-font;
+  font-size: 11px;
+  line-height: 11px;
+  float: left;
+}
+
+.priv-l-1 {
+  width: 96px;
+  border-right: 1px solid black;
+}
+
+.priv-l-2 {
+  width: 98px;
+  padding-left: 6px;
+}
+
+@media only screen and (max-width: 1100px) {
+  
+  body, html {
+    height: 1218px;
+  }
+  
+  header {
+    height: 126px;
+  }
+  
+  .earn-degree-cntnr {
+    width: 60%;
+    min-width: 650px;
+    height: 32px;
+    margin-top: 28px;
+  }
+  
+  .logo-cntnr {
+    width: 372px;
+    height: 32px;
+    margin-left: 0;
+  }
+  
+  header p {
+    width: 206px;
+    height: 26px;
+    font-size: 13px;
+    letter-spacing: -0.4px;
+    line-height: 14px;
+    margin-right: 21px;
+    
+  }
+  
+  nav {
+    height: 35px;
+  }
+  
+  nav ul {
+    width: 790px;
+  }
+  
+  nav li {
+    font-size: 13px;
+    line-height: 35px;
+    letter-spacing: -0.6px;
+  }
+  
+  .li-1 {
+    width: 191px;
+    padding-left: 39px;
+  }
+  
+  .li-2 {
+    width: 156px;
+    padding-left: 34px;
+    letter-spacing: -0.7px;
+  }
+  
+  .li-3 {
+    width: 166px;
+    padding-left: 35px;
+    letter-spacing: -0.7px;
+  }
+  
+  .li-4 {
+    width: 133px;
+    padding-left: 33px;
+    letter-spacing: -0.7px;
+  }
+  
+  .li-5 {
+    width: 99px;
+    padding-left: 34px;
+  }
+  
+  .active-arrow {
+    border-left: 2.5px solid transparent;
+    border-right: 2.5px solid transparent;
+    border-top: 3.5px solid #45a3da;
+    top: 11px;
+    left: 9px;
+  }
+  
+  .top-banner {
+    height: 72px;
+  }
+  
+  .top-banner h1 {
+    width: 608px;
+    height: 34px;
+    font-size: 34px;
+    line-height: 34px;
+    letter-spacing: -0.96px;
+    margin-top: 17px;
+    left: 4px;
+  }
+  
+  .cta-cntnr {
+    min-width: 600px;
+    height: 338px;
+  }
+  
+  .form-cntnr {
+    height: 328px;
+    min-width: 600px;
+  }
+  
+  form {
+    width: 301px;
+    height: 229px;
+    border-width: 8px;
+    margin-top: 47px;
+    margin-right: 196px;
+  }
+  
+  form h3 {
+    width: 262px;
+    height: 22px;
+    font-size: 26px;
+    line-height: 22px;
+    letter-spacing: -0.6px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    right: 0px;
+  }
+  
+  form select {
+    width: 253px;
+    height: 38px;
+    font-size: 12px;
+    letter-spacing: -0.1px;
+    border-width: 5px;
+    
+  }
+  
+  form div {
+    width: 255px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 39px;
+    letter-spacing: -0.5px;
+  }
+  
+  form p {
+    width: 48px;
+    height: 8px;
+    margin-top: 12px;
+    font-size: 8px;
+    left: 0;
+    
+  }
+  
+  .get-started-cntnr {
+    width: 760px;
+    height: 361px;
+  }
+  
+  .get-started {
+    width: 392px;
+    height: 30px;
+    font-size: 36.5px;
+    letter-spacing: -0.75px;
+    line-height: 30px;
+    margin-top: 43px;
+    margin-left: 184px;
+    margin-bottom: 41px;
+    position: relative;
+    bottom: 1px;
+  }
+  
+  .steps-cntnr {
+    width: 754px;
+  }
+  
+  .steps {
+    width: 232px;
+    height: 111px;
+    border-width: 7px;
+    
+  }
+  
+  .steps-marg-lft {
+    margin-left: 8px;
+  }
+  
+  .steps div {
+    width: 31px;
+    height: 31px;
+    margin-top: 15px;
+  }
+  
+  .steps p {
+    height: 28px;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .steps-first {
+    width: 86px;
+  }
+  
+  .steps-mid {
+    width: 154px;
+  }
+  
+  .steps-last {
+    width: 170px;
+  }
+  
+  .up-arrow {
+    width: 103px;
+    height: 188px;
+    bottom: 243px;
+    left: 156px;
+  }
+  
+  .no-login {
+    width: 466px;
+    height: 16px;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: -0.35px;
+    margin-top: 0px;
+    right: 0px;
+  }
+  
+  .cta-btn {
+    width: 292px;
+    height: 44px;
+    font-size: 19px;
+    line-height: 43px;
+    letter-spacing: -0.95px;
+    margin-top: 39px;
+    
+  }
+  
+  .schools-cntnr {
+    height: 128px;
+  }
+  
+  .schools-cntnr h4 {
+    width: 246px;
+    height: 16px;
+    font-size: 19px;
+    line-height: 16px;
+    margin-top: 25px;
+    margin-bottom: 27px;
+  }
+  
+  .schools-cntnr ul {
+    width: 688px;
+    height: 32px;
+  }
+  
+  .schools-cntnr li {
+    width: 102px;
+    height: 26px;
+    margin-right: 36px;
+  }
+  
+  .schools-cntnr li:nth-child(1) {
+    top: -2px;
+  }
+
+  .schools-cntnr li:nth-child(2) {
+    margin-right: 31px;
+    top: -1px;
+  }
+
+  .schools-cntnr li:nth-child(3) {
+    margin-right: 53px;
+    top: -3px;
+  }
+
+  .schools-cntnr li:nth-child(4) {
+    margin-right: 57px;
+    bottom: 5px;
+  }
+
+  .schools-cntnr li:last-child {
+    margin-right: 0;
+    top: -3px;
+  }
+  
+  .logo-2 {
+    width: 192px;
+    height: 18px;
+    margin-top: 28px;
+    margin-bottom: 11px;
+  }
+  
+  footer p {
+    width: 249px;
+    height: 8px;
+    font-size: 9px;
+    line-height: 8px;
+    letter-spacing: -0.19px;
+    margin-bottom: 6px;
+  }
+  
+  .privacy {
+    width: 160px;
+    height: 6px;
+  }
+  
+  .privacy li {
+    height: 6px;
+    font-size: 8px;
+    line-height: 6px;
+    letter-spacing: 0.3px;
+  }
+  
+  .priv-l-1 {
+    width: 75px;
+  }
+  
+  .priv-l-2 {
+    width: 76px;
+  }
+  
+}
+
+@media only screen and (max-width: 1060px) {
+  
+  .jumbotron-img {
+    background-position: -50px 0;
+  }
+  
+  form {
+    margin-right: 70px
+  }
+  
+}
+
+@media only screen and (max-width: 880px) {
+  
+  .jumbotron-img {
+    background-position: -150px 0;
+  }
+  
+  form {
+    margin-right: 30px
+  }
+  
+}
+
+@media only screen and (max-width: 320px) {
+  
+  header {
+    height: 83px;
+    position: relative;
+  }
+  
+  .earn-degree-cntnr {
+    width: 63%;
+    min-width: 63%;
+    height: 58px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+  }
+  
+  .logo-cntnr {
+    width: 100%;
+    height: 18px;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    width: 204px;
+    height: 26px;
+    margin: 0 auto;
+  }
+  
+  .hamburger {
+    width: 50px;
+    height: 45px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+  }
+  
+  .hamburger div {
+    width: 100%;
+    height: 30%;
+    background: rgb(16, 89, 116);
+    margin-bottom: 2px;
+  }
+  
+  nav {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 102%;
+    z-index: 10000;
+  }
+  
+  nav ul {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+  
+  nav li {
+    width: 100vw;
+    height: 20vh;
+    line-height: 20vh;
+    text-align: center;
+    border: 2px solid;
+    border-width: 0 0 2px 0;
+    -webkit-border-image: url(../img/mobile-nav-border.jpg) 0 0 2 0 round;
+         -o-border-image: url(../img/mobile-nav-border.jpg) 0 0 2 0 round;
+            border-image: url(../img/mobile-nav-border.jpg) 0 0 2 0 round;
+  }
+  
+  .li-1 {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .li-2 {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .li-3 {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .li-4 {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .li-5 {
+    width: 100vw;
+    padding: 0;
+  }
+  
+  .top-banner {
+    height: 72px;
+  }
+  
+  .top-banner h1 {
+    width: 236px;
+    height: 50px;
+    font-size: 24px;
+    text-align: center;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-top: 11px;
+    left: 0;
+  }
+  
+  .cta-cntnr {
+    min-width: 100vw;
+    overflow: auto;
+  }
+  
+  .jumbotron-img {
+    background-image: url(../img/banner-mobile.jpg);
+    background-position: 0;
+  }
+  
+  .form-cntnr {
+    height: 338px;
+    min-width: 100vw;
+  }
+  
+  form {
+    width: 300px;
+    height: 230px;
+    margin: 0 auto;
+    top: 36px;
+    float: none;
+  }
+  
+  .get-started-cntnr {
+    width: 100vw;
+    height: 610px;
+  }
+  
+  .get-started {
+    width: 164px;
+    height: 62px;
+    font-size: 30px;
+    line-height: 30px;
+    margin-left: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .steps-cntnr {
+    width: 100vw;
+  }
+  
+  .steps {
+    width: 200px;
+    height: 110px;
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .steps-right {
+    float: left;
+  }
+  
+  .up-arrow {
+    width: 150px;
+    height: 460px;
+    bottom: 510px;
+    left: 142px
+  }
+  
+  .no-login {
+    width: 204px;
+    height: 52px;
+    clear: both;
+  }
+  
+  .cta-btn {
+    margin-top: 10px;
+  }
+  
+  .schools-cntnr {
+    width: 100vw;
+    height: 236px;
+  }
+  
+  .schools-cntnr ul {
+    width: 100vw;
+    height: 146px;
+  }
+  
+  .schools-cntnr li {
+    width: 132px;
+    height: 44px;
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 10px;
+    
+  }
+  
+  .schools-cntnr li:nth-child(1) {
+    margin-left: 20px;
+    float: left;
+    top: 0;
+    right: 0;
+  }
+  
+  .schools-cntnr li:nth-child(2) {
+    margin-right: 20px;
+    float: right;
+    top: 0;
+  }
+  
+  .schools-cntnr li:nth-child(3) {
+    width: 100vw;
+    clear: both;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-left: 75px;
+    top: 0;
+    
+  }
+  
+  .schools-cntnr li:nth-child(4) {
+    margin-left: 20px;
+    float: left;
+    bottom: 0;
+    top: 0;
+    margin-right: auto;
+  }
+  
+  .schools-cntnr li:nth-child(5) {
+    margin-right: 20px;
+    float: right;
+  }
+  
+  footer nav {
+    display: none;
+  }
+  
+  
+}
