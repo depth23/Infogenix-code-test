@@ -58,7 +58,7 @@ a {
 header{
   width: 100vw;
   height: 160px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .earn-degree-cntnr {
@@ -75,9 +75,9 @@ header{
   width: 472px;
   height: 48px;
   font-size: 12px;
-  overflow: auto;
+  overflow: hidden;
   display: inline-block;
-  margin-left: 32px
+  margin-left: 32px;
 }
 
 header h1 {
