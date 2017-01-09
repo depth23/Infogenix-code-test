@@ -2,7 +2,7 @@
 
 var screenSize = window.screen.width;
 
-if(screenSize <= 320) {
+if(screenSize <= 415) {
   document.getElementById("burger-menu").addEventListener("click", function() {
     document.getElementById('html').style.overflow = "hidden";
     document.getElementById('body').style.overflow = "hidden";
