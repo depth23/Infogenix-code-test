@@ -38,10 +38,8 @@ $arial-font: Arial, "Helvetica Neue", Helvetica, sans-serif;
 $roboto-cd-font: 'Roboto Condensed', sans-serif;
 
 html, body {
-  width: 100vw;
-  height: 1550px;
+  height: 100%;
   margin: 0;
-  overflow-x: hidden;
 }
 
 img, embed, object, video {
@@ -55,16 +53,20 @@ a {
 
 //-------------------------
 
+.no-scroll {
+  overflow: hidden;
+}
+
 header{
-  width: 100vw;
+  width: 100%;
   height: 160px;
   overflow: hidden;
+  position: relative;
 }
 
 .earn-degree-cntnr {
   width: 73%;
   max-width: 1022px;
-  min-width: 850px;
   height: 48px;
   margin: 0 auto;
   margin-top: 36px;
@@ -72,12 +74,12 @@ header{
 }
 
 .logo-cntnr {
-  width: 472px;
-  height: 48px;
+  width: 47%;
+  height: 100%;
   font-size: 12px;
   overflow: hidden;
   display: inline-block;
-  margin-left: 32px;
+  margin-left: 3%;
 }
 
 header h1 {
@@ -90,19 +92,19 @@ header h1 span {
 }
 
 header p {
-  width: 268px;
-  height: 34px;
+  width: 26.2%;
+  height: 100%;
   color: rgb(88, 88, 90);
   font-family: $roboto-cd-font;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.3px;
-  line-height: 19px;
+  line-height: 119%;
   text-align: center;
   display: inline-block;
   float: right;
-  margin-top: 3px;
-  margin-right: 55px;
+  margin-top: 0.2%;
+  margin-right: 5.3%;
 }
 
 .hamburger {
@@ -110,7 +112,7 @@ header p {
 }
 
 nav {
-  width: 100vw;
+  width: 100%;
   height: 45px;
   color: #ffffff;
   background: rgb(13, 74, 96);
@@ -119,7 +121,8 @@ nav {
 }
 
 nav ul {
-  width: 985px;
+  width: 70%;
+  max-width: 1400px;
   height: 100%;
   position: relative;
   margin: 0 auto;
@@ -153,54 +156,49 @@ nav li a {
 }
 
 .li-1 {
-  width: 238px;
-  padding-left: 45px;
+  width: 24%;
 }
 
 .li-2 {
-  width: 200px;
-  padding-left: 45px;
+  width: 20.4%;
   letter-spacing: -0.6px;
 }
 
 .li-3 {
-  width: 208px;
-  padding-left: 44px;
+  width: 21.2%;
   letter-spacing: -0.6px;
 }
 
 .li-4 {
-  width: 172px;
-  padding-left: 45px;
+  width: 17.5%;
   letter-spacing: -0.6px;
 }
 
 .li-5 {
-  width: 125px;
-  padding-left: 44px;
+  width: 13%;
   border: 2px solid;
   border-width: 0 2px 0 2px;
   @include border-image(url(../img/border.jpg) 0 2 0 2 round);
 }
 
 .a-1 {
-  padding-left: 45px;
+  padding-left: 18.5%;
 }
 
 .a-2 {
-  padding-left: 45px;
+  padding-left: 23%;
 }
 
 .a-3 {
-  padding-left: 44px;
+  padding-left: 22%;
 }
 
 .a-4 {
-  padding-left: 45px;
+  padding-left: 27%;
 }
 
 .a-5 {
-  padding-left: 44px;
+  padding-left: 36%;
 }
 
 .active-arrow {
@@ -211,19 +209,20 @@ nav li a {
   border-top: 5px solid rgb(69, 163, 218);
   position: relative;
   top: 14px;
-  left: 11px;
+  left: 6.3%;
 }
 
 .top-banner {
   height: 93px;
-  width: 100vw;
+  width: 100%;
   background: rgb(69, 163, 218);
   color: #ffffff;
   overflow: auto;
 }
 
 .top-banner h1 {
-  width: 772px;
+  width: 53.3%;
+  min-width: 774px;
   height: 44px;
   font-family: $roboto-cd-font;
   font-size: 44px;
@@ -233,13 +232,12 @@ nav li a {
   position: relative;
   margin: 0 auto;
   margin-top: 21px;
-  left: 3px;
+  left: 0.3%;
 }
 
 .cta-cntnr {
-  width: 100vw;;
-  min-width: 1340px;
-  height: 428px;
+  width: 100%;;
+  height: 427px;
   position: relative;
   margin: 0 auto;
 }
@@ -250,6 +248,7 @@ nav li a {
   background-image: url(../img/background-banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   position: absolute;
   top: 0;
   right: 0;
@@ -258,27 +257,27 @@ nav li a {
 }
 
 .form-cntnr {
-  width: 100vw;
-  height: 428px;
+  width: 100%;
+  height: 100%;
   max-width: 1400px;
-  min-width: 1340px;
   margin: 0 auto;
   position: relative;
 }
 
 form {
-  width: 385px;
-  height: 290px;
+  width: 27.4%;
+  min-width: 210px;
+  height: 67.8%;
   border: 10px solid rgb(16, 89, 116);
   float: right;
   margin-top: 59px;
-  margin-right: 249px;
+  margin-right: 17.8%;
   position: relative;
 }
 
 form h3 {
-  width:332px;
-  height: 28px;
+  width: 87%;
+//  height: 9.9%;
   color: rgb(15, 81, 105);
   font-family: $roboto-cd-font;
   font-size: 34px;
@@ -287,15 +286,14 @@ form h3 {
   letter-spacing: -1.1px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 25px;
-  margin-bottom: 22px;
+  margin-top: 6.4%;
+  margin-bottom: 6.1%;
   position: relative;
-  right: 1px;
 }
 
 form select {
-  width: 324px;
-  height: 51px;
+  width: 84.8%;
+  height: 17.5%;
   font-family: $arial-font;
   font-size: 15px;
   -webkit-appearance: none;
@@ -310,12 +308,12 @@ form select {
 }
 
 select:nth-child(2) {
-  margin-bottom: 7px;
+  margin-bottom: 1.5%;
 }
 
 form div {
-  width: 325px;
-  height: 51px; 
+  width: 84.4%;
+  height: 17.5%; 
   background: rgb(191, 30, 30);
   background: linear-gradient(to bottom, rgb(191, 30, 30), rgb(166, 26, 26));
   color: #ffffff;
@@ -326,31 +324,33 @@ form div {
   text-align: center;
   line-height: 51px;
   margin: 0 auto;
-  margin-top: 13px;
+  margin-top: 3.4%;
   cursor: pointer;
 }
 
 form p {
-  width: 60px;
-  height: 8px;
+  min-width: 100px;
+  height: 3%;
   font-family: $arial-font;
   text-align: center;
   margin: 0 auto;
-  margin-top: 16px;
+  margin-top: 4.2%;
   font-size: 10px;
   position: relative;
   left: 1px;
 }
 
 .get-started-cntnr {
-  width: 960px;
+  width: 69%;
+  max-width: 962px;
   height: 474px;
   margin: 0 auto;
   margin-bottom: 9px;
 }
 
 .get-started {
-  width: 500px;
+  width: 52.1%;
+  min-width: 501px;
   height: 48px;
   color: rgb(2, 43, 67);
   font-family: $roboto-cd-font;
@@ -360,34 +360,43 @@ form p {
   text-align: center;
   margin-top: 43px;
   margin-bottom: 54px;
-  margin-left: 230px;
+  margin-left: 24%;
   text-align: center;
 }
 
 .steps-cntnr {
-  width: 960px;
+  width: 100%;
   height: 161px;
   margin: 0 auto;
   position: relative;
 }
 
 .steps {
-  width: 294px;
-  height: 141px;
+  width: 32.6%;
+  height: 162px;
   display: inline-block;
   float: left;
-  border: 10px solid rgb(216, 236, 247);
+  background: rgb(216, 236, 247);
+  position: relative;
 }
 
-.steps-right {
-  float: right
+.steps-border {
+  width: 93.7%;
+  height: 86.6%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  margin: 0 auto;
+  top: 7%;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .steps-marg-lft {
-  margin-left: 10px;
+  margin-left: 1%;
 }
 
-.steps div {
+.num-border {
   width: 40px;
   height: 40px;
   color: rgb(190, 30, 30);
@@ -399,7 +408,7 @@ form p {
   border: 4px solid rgb(69, 163, 218);
   border-radius: 50%;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 6.8%;
   position: relative;
 }
 
@@ -412,35 +421,21 @@ form p {
 }
 
 .steps p {
-  height: 42px;
   font-family: $arial-font;
   font-size: 18px;
   text-align: center;
   line-height: 22px;
   margin: 0 auto;
-  margin-top: 13px;
-}
-
-.steps-first {
-  width: 113px;
-}
-
-.steps-mid {
-  width: 200px;
-}
-
-.steps-last {
-  width: 216px;
+  margin-top: 4.3%;
 }
 
 .up-arrow {
   position: relative;
   bottom: 316px;
-  left: 198px;
+  left: 68%;
 }
 
 .no-login {
-  width: 590px;
   height: 25px;
   font-family: $roboto-cd-font;
   font-size: 24px;
@@ -455,7 +450,7 @@ form p {
 }
 
 .cta-btn {
-  width: 370px;
+  width: 38.4%;
   height: 56px;
   font-family: $roboto-cd-font;
   font-size: 24px;
@@ -475,14 +470,14 @@ form p {
 }
 
 .schools-cntnr {
-  width: 100vw;
+  width: 100%;
   height: 164px;
   background: rgb(216, 236, 247);
-  overflow: auto;
+  overflow: hidden;
 }
 
 .schools-cntnr h4 {
-  width: 312px;
+  min-width: 312px;
   height: 22px;
   color: rgb(2, 43, 67);
   font-family: $roboto-cd-font;
@@ -497,18 +492,17 @@ form p {
 }
 
 .schools-cntnr ul {
-  width: 876px;
+  width: 62.6%;
   height: 48px;
   padding: 0;
   margin: 0 auto;
 }
 
 .schools-cntnr li {
-  width: 130px;
-  height: 48px;
+  width: 14.8%;
   list-style: none;
   float: left;
-  margin-right: 46px;
+  margin-right: 5.3%;
   position: relative;
 }
 
@@ -518,17 +512,17 @@ form p {
 }
 
 .schools-cntnr li:nth-child(2) {
-  margin-right: 39px;
+  margin-right: 4.5%;
   top: 4px;
 }
 
 .schools-cntnr li:nth-child(3) {
-  margin-right: 67px;
+  margin-right: 7.7%;
   top: 2px;
 }
 
 .schools-cntnr li:nth-child(4) {
-  margin-right: 73px;
+  margin-right: 8.3%;
 }
 
 .schools-cntnr li:last-child {
@@ -587,388 +581,242 @@ footer p {
   padding-left: 6px;
 }
 
-@media only screen and (max-width: 1100px) {
-  
-  body, html {
-    height: 1218px;
-  }
-  
-  header {
-    height: 126px;
-  }
-  
-  .earn-degree-cntnr {
-    width: 60%;
-    min-width: 650px;
-    height: 32px;
-    margin-top: 28px;
-  }
-  
-  .logo-cntnr {
-    width: 372px;
-    height: 32px;
-    margin-left: 0;
-  }
-  
+@media only screen and (max-width: 1200px) { 
+
   header p {
-    width: 206px;
-    height: 26px;
-    font-size: 13px;
-    letter-spacing: -0.4px;
-    line-height: 14px;
-    margin-right: 21px;
-    
-  }
-  
-  nav {
-    height: 35px;
-  }
-  
-  nav ul {
-    width: 790px;
+    font-size: 14px;
   }
   
   nav li {
-    font-size: 13px;
-    line-height: 35px;
-    letter-spacing: -0.6px;
+    font-size: 14px;
   }
   
-  .li-1 {
-    width: 191px;
-    padding-left: 39px;
+  .a-1 {
+    padding-left: 12%;
   }
   
-  .li-2 {
-    width: 156px;
-    padding-left: 34px;
-    letter-spacing: -0.7px;
-  }
-  
-  .li-3 {
-    width: 166px;
-    padding-left: 35px;
-    letter-spacing: -0.7px;
-  }
-  
-  .li-4 {
-    width: 133px;
-    padding-left: 33px;
-    letter-spacing: -0.7px;
-  }
-  
-  .li-5 {
-    width: 99px;
-    padding-left: 34px;
-  }
-  
-  .active-arrow {
-    border-left: 2.5px solid transparent;
-    border-right: 2.5px solid transparent;
-    border-top: 3.5px solid #45a3da;
-    top: 11px;
-    left: 9px;
-  }
-  
-  .top-banner {
-    height: 72px;
-  }
-  
-  .top-banner h1 {
-    width: 608px;
-    height: 34px;
-    font-size: 34px;
-    line-height: 34px;
-    letter-spacing: -0.96px;
-    margin-top: 17px;
-    left: 4px;
-  }
-  
-  .cta-cntnr {
-    min-width: 600px;
-    height: 338px;
-  }
-  
-  .form-cntnr {
-    height: 328px;
-    min-width: 600px;
-  }
-  
-  form {
-    width: 301px;
-    height: 229px;
-    border-width: 8px;
-    margin-top: 47px;
-    margin-right: 196px;
-  }
-  
-  form h3 {
-    width: 262px;
-    height: 22px;
-    font-size: 26px;
-    line-height: 22px;
-    letter-spacing: -0.6px;
-    margin-top: 20px;
-    margin-bottom: 19px;
-    right: 0px;
-  }
-  
-  form select {
-    width: 253px;
-    height: 38px;
-    font-size: 12px;
-    letter-spacing: -0.1px;
-    border-width: 5px;
-    
-  }
-  
-  form div {
-    width: 255px;
-    height: 40px;
-    font-size: 18px;
-    line-height: 39px;
-    letter-spacing: -0.5px;
-  }
-  
-  form p {
-    width: 48px;
-    height: 8px;
-    margin-top: 12px;
-    font-size: 8px;
-    left: 0;
-    
-  }
-  
-  .get-started-cntnr {
-    width: 760px;
-    height: 361px;
-  }
-  
-  .get-started {
-    width: 392px;
-    height: 30px;
-    font-size: 36.5px;
-    letter-spacing: -0.75px;
-    line-height: 30px;
-    margin-top: 43px;
-    margin-left: 184px;
-    margin-bottom: 41px;
-    position: relative;
-    bottom: 1px;
-  }
-  
-  .steps-cntnr {
-    width: 754px;
-  }
-  
-  .steps {
-    width: 232px;
-    height: 111px;
-    border-width: 7px;
-    
-  }
-  
-  .steps-marg-lft {
-    margin-left: 8px;
-  }
-  
-  .steps div {
-    width: 31px;
-    height: 31px;
-    margin-top: 15px;
+  .a-2 {
+    padding-left: 16%;
   }
   
   .steps p {
-    height: 28px;
-    font-size: 14px;
-    line-height: 17px;
-    margin-top: 10px;
-    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 8%;
   }
-  
-  .steps-first {
-    width: 86px;
-  }
-  
-  .steps-mid {
-    width: 154px;
-  }
-  
-  .steps-last {
-    width: 170px;
-  }
-  
-  .up-arrow {
-    width: 103px;
-    height: 188px;
-    bottom: 243px;
-    left: 156px;
-  }
-  
-  .no-login {
-    width: 466px;
-    height: 16px;
-    font-size: 18px;
-    line-height: 16px;
-    letter-spacing: -0.35px;
-    margin-top: 0px;
-    right: 0px;
-  }
+}
+
+@media only screen and (max-width: 1100px) { 
   
   .cta-btn {
-    width: 292px;
-    height: 44px;
-    font-size: 19px;
-    line-height: 43px;
-    letter-spacing: -0.95px;
-    margin-top: 39px;
-    
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) { 
+
+  header p {
+    font-size: 12px;
   }
   
-  .schools-cntnr {
-    height: 128px;
+  
+  nav li {
+    font-size: 12px;
   }
   
-  .schools-cntnr h4 {
-    width: 246px;
-    height: 16px;
-    font-size: 19px;
-    line-height: 16px;
-    margin-top: 25px;
-    margin-bottom: 27px;
+  .top-banner h1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  
+  form select {
+    font-size: 12px;
+  }
+  
+  .get-started {
+    font-size: 44px;
+    margin-left: 11%;
+  }
+  
+  .steps p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 12%;
   }
   
   .schools-cntnr ul {
-    width: 688px;
-    height: 32px;
-  }
-  
-  .schools-cntnr li {
-    width: 102px;
-    height: 26px;
-    margin-right: 36px;
-  }
-  
-  .schools-cntnr li:nth-child(1) {
-    top: -2px;
-  }
-
-  .schools-cntnr li:nth-child(2) {
-    margin-right: 31px;
-    top: -1px;
-  }
-
-  .schools-cntnr li:nth-child(3) {
-    margin-right: 53px;
-    top: -3px;
-  }
-
-  .schools-cntnr li:nth-child(4) {
-    margin-right: 57px;
-    bottom: 5px;
-  }
-
-  .schools-cntnr li:last-child {
-    margin-right: 0;
-    top: -3px;
-  }
-  
-  .logo-2 {
-    width: 192px;
-    height: 18px;
-    margin-top: 28px;
-    margin-bottom: 11px;
-  }
-  
-  footer p {
-    width: 249px;
-    height: 8px;
-    font-size: 9px;
-    line-height: 8px;
-    letter-spacing: -0.19px;
-    margin-bottom: 6px;
-  }
-  
-  .privacy {
-    width: 160px;
-    height: 6px;
-  }
-  
-  .privacy li {
-    height: 6px;
-    font-size: 8px;
-    line-height: 6px;
-    letter-spacing: 0.3px;
-  }
-  
-  .priv-l-1 {
-    width: 75px;
-  }
-  
-  .priv-l-2 {
-    width: 76px;
+    width: 68%;
   }
   
 }
 
-@media only screen and (max-width: 1060px) {
-  
-  .jumbotron-img {
-    background-position: -50px 0;
-  }
-  
-  form {
-    margin-right: 70px
+@media only screen and (max-width: 875px) { 
+
+  .cta-btn {
+    font-size: 18px;
   }
   
 }
 
-@media only screen and (max-width: 880px) {
+@media only screen and (max-width: 800px) { 
+
   
-  .jumbotron-img {
-    background-position: -150px 0;
+  .a-1 {
+    padding-left: 7%;
   }
   
-  form {
-    margin-right: 30px
+  .a-2 {
+    padding-left: 12%;
+  }
+  
+  .a-3 {
+    padding-left: 12%;
+  }
+  
+  .a-4 {
+    padding-left: 18%;
+  }
+  
+  .a-5 {
+    padding-left: 28%;
+  }
+  
+  .top-banner h1 {
+    min-width: 615px; 
+    font-size: 36px;
+    left: 0;
+  }
+  
+  form select {
+    font-size: 12px;
+  }
+  
+  .get-started {
+    min-width: 100%;
+    margin-left: 0;
+  }
+  
+  .steps p {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 13%;
+  }
+  
+  .schools-cntnr ul {
+    width: 75%;
   }
   
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 764px) {
   
-  header {
-    height: 83px;
-    position: relative;
+  .cta-btn {
+    min-width: 170px;
+    line-height: 26px;
   }
+  
+} 
+
+@media only screen and (max-width: 700px) { 
+
   
   .earn-degree-cntnr {
-    width: 63%;
-    min-width: 63%;
-    height: 58px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    margin-left: 10px;
+    min-width: 454px;
+  }
+  
+  nav li {
+    text-align: center;
+  }
+  
+  .a-1 {
+    padding-left: 0;
+  }
+  
+  .a-2 {
+    padding-left: 0;
+  }
+  
+  .a-3 {
+    padding-left: 0;
+  }
+  
+  .a-4 {
+    padding-left: 0;
+  }
+  
+  .a-5 {
+    padding-left: 0;
+  }
+  
+  .top-banner h1 {
+    min-width: 98%; 
+    font-size: 30px;
+    text-align: center;
+    left: 0;
+  }
+  
+  
+  
+}
+
+@media only screen and (max-width: 658px) { 
+
+  .get-started {
+    line-height: 38px;
+  }
+
+}
+
+@media only screen and (max-width: 648px) { 
+
+  .li-1 {
+    line-height: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 586px) { 
+
+  .li-3 {
+    line-height: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 564px) { 
+
+  .li-2 {
+    line-height: 21px;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .earn-degree-cntnr {
+    width: 230px;
+    min-width: 230px;
+    margin-left: 2%;
   }
   
   .logo-cntnr {
     width: 100%;
-    height: 25px;
-    margin-bottom: 5px;
+    display: block;
   }
   
   header p {
-    width: 204px;
-    height: 26px;
-    margin: 0 auto;
+    width: 50%;
+    float: left;
+    margin-top: 0;
+    margin-right: 0;
   }
   
   .hamburger {
-    width: 50px;
-    height: 45px;
+    width: 80px;
+    height: 70px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    bottom: 10%;
+    right: 8%;
     display: block;
   }
   
@@ -979,13 +827,17 @@ footer p {
     margin-bottom: 2px;
   }
   
+  footer nav {
+    display: none;
+  }
+  
   nav {
     height: 100vh;
     position: absolute;
     top: 0;
     left: 0;
-    margin-left: 102%;
     z-index: 10000;
+    display: none;
   }
   
   nav ul {
@@ -997,6 +849,7 @@ footer p {
   nav li {
     width: 100vw;
     height: 20vh;
+    font-size: 18px;
     line-height: 20vh;
     text-align: center;
     border: 2px solid;
@@ -1046,86 +899,83 @@ footer p {
     padding-left: 0;
   }
   
-  .top-banner {
-    height: 72px;
-  }
   
   .top-banner h1 {
-    width: 236px;
-    height: 50px;
-    font-size: 24px;
-    text-align: center;
-    line-height: 25px;
-    margin: 0 auto;
-    margin-top: 11px;
-    left: 0;
-  }
-  
-  .cta-cntnr {
-    min-width: 100vw;
-    overflow: auto;
-  }
-  
-  .jumbotron-img {
-    background-image: url(../img/banner-mobile.jpg);
-    background-position: 0;
+    line-height: 33px;
+    margin-top: 3%;
   }
   
   .form-cntnr {
-    height: 338px;
-    min-width: 100vw;
+    overflow: hidden;
   }
   
   form {
-    width: 300px;
-    height: 230px;
-    margin: 0 auto;
-    top: 36px;
-    float: none;
+    margin-top: 59px;
   }
   
-  .get-started-cntnr {
-    width: 100vw;
-    height: 610px;
-  }
-  
-  .get-started {
-    width: 164px;
-    height: 62px;
-    font-size: 30px;
-    line-height: 30px;
-    margin-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .steps-cntnr {
-    width: 100vw;
-  }
-  
-  .steps {
-    width: 200px;
-    height: 110px;
-    margin: 0;
-    margin-left: 20px;
-    margin-bottom: 10px;
-  }
-  
-  .steps-right {
-    float: left;
+  form h3 {
+    width: 90%;
+    font-size: 28px;
   }
   
   .up-arrow {
-    width: 150px;
-    height: 460px;
-    bottom: 510px;
-    left: 142px
+    height: 150%;
+    bottom: 325px;
+    left: 68%;
   }
   
   .no-login {
-    width: 204px;
-    height: 52px;
-    clear: both;
+    font-size: 22px;
+  }
+  
+  .schools-cntnr ul {
+    width: 95%;
+  }
+  
+
+}
+
+@media only screen and (max-width: 384px) {
+  
+  .earn-degree-cntnr {
+    width: 200px;
+    min-width: 200px;
+    margin-left: 2%;
+  }
+  
+  header p {
+    width: 60%;
+  }
+  
+  .hamburger {
+    top: 12%;
+  }
+  
+  form h3 {
+    height: 14.9%;
+  }
+  
+  .get-started-cntnr {
+    width: 72%;
+    height: 465px;
+  }
+  
+  .get-started {
+    height: 81px;
+  }
+  
+  .steps p {
+    font-size: 11px
+  }
+  
+  .up-arrow {
+    height: 180%;
+    bottom: 364px;
+  }
+  
+  .no-login {
+    height: 75px;
+    margin-top: 20px;
   }
   
   .cta-btn {
@@ -1133,62 +983,31 @@ footer p {
   }
   
   .schools-cntnr {
-    width: 100vw;
-    height: 236px;
+    height: 152px;
+  }
+  
+  .schools-cntnr h4 {
+    font-size: 20px;
+    margin-top: 18px;
+    margin-bottom: 24px;
   }
   
   .schools-cntnr ul {
-    width: 100vw;
-    height: 146px;
+    width: 98%;
+  }
+  
+  .schools-cntnr ul {
+    width: 91%;
   }
   
   .schools-cntnr li {
-    width: 132px;
-    height: 44px;
+    width: 27%;
     display: inline-block;
-    margin: 0;
-    margin-bottom: 10px;
-    
-  }
-  
-  .schools-cntnr li:nth-child(1) {
-    margin-left: 20px;
-    float: left;
-    top: 0;
-    right: 0;
-  }
-  
-  .schools-cntnr li:nth-child(2) {
-    margin-right: 20px;
-    float: right;
-    top: 0;
-  }
-  
-  .schools-cntnr li:nth-child(3) {
-    width: 100vw;
-    clear: both;
-    text-align: center;
-    margin-bottom: 10px;
-    top: 0;
-    right: 10px;
   }
   
   .schools-cntnr li:nth-child(4) {
-    margin-left: 20px;
-    float: left;
-    bottom: 0;
-    top: 0;
-    margin-right: auto;
+    margin-right: 12.3%;
+    margin-left: 15%;
+    margin-top: 2%;
   }
-  
-  .schools-cntnr li:nth-child(5) {
-    margin-right: 20px;
-    float: right;
-  }
-  
-  footer nav {
-    display: none;
-  }
-  
-  
 }
